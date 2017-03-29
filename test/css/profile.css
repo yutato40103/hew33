@@ -1,0 +1,38 @@
+﻿@charset "utf-8";
+/*------ ブラウザの持つマージンとパディングの設定をリセットする ------*/
+* {
+	padding: 0;
+	margin: 0;
+}
+@media only screen and (min-width:641px){
+	#icon_image{
+		border-right: 100%;
+		background-color: red;
+	}
+	#personality{
+		clear: left;
+		overflow: hidden;
+		width: 100%;
+	}
+	.personality{
+		width: 33%;
+		float: left;
+	}
+
+	#are{
+		clear: left;
+		overflow: hidden;
+		width: 100%;
+	}
+	.are{
+		width: 50%;
+		float: left;
+	}
+}
+
+
+
+
+
+
+

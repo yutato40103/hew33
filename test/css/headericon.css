@@ -1,0 +1,154 @@
+@charset "utf-8";
+/*------ ブラウザの持つマージンとパディングの設定をリセットする ------*/
+* {
+	padding: 0;
+	margin: 0;
+}
+@media only screen and (min-width:641px){
+	#wrapper{
+		width:100%;
+		
+		margin:0 auto;
+	}
+	html{
+		box-sizing:border-box;
+	}
+	*,*:before,*:after{
+		box-sizing:inherit;
+	}
+	img {
+		max-width:100%;
+		width:100%;
+		height:auto;
+	}
+	body{
+		font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+		font-size:85%;
+	}
+	header{
+		clear:left;
+		overflow:hidden;
+		padding: 1%;
+		font-size:99%;
+		background-color:#3D6124;
+	}
+	header h1{
+		float:left;
+	}
+	header a{
+		text-decoration: none;
+		color: white;
+	}
+	header p{
+		float:left;
+		color:white;
+	}
+
+	#searchform {  
+		width: 200px;  
+		background: url(../image/input4.jpg) left top no-repeat;   
+		display: block;  
+		height: 24px;  
+		left:80%; 
+		top:5%;
+		position: absolute; 
+	}  
+	#keywords  {  
+		width: 156px;  
+		position: absolute;  
+		top: 3px;  
+		left:5%;  
+		border: 1px solid #FFF;  
+	}  
+	#searchBtn {  
+		position: absolute;  
+		top: 3px;  
+		left:88%; 
+	}
+	
+	#guest{
+		padding-top:5%;	
+		margin:0 5%;
+		padding-left:67%;	
+	}
+
+	#guest p{
+		margin-left:1%;
+		vertical-align:middle;
+	}
+
+	#login_id{
+		background-color:#00C622;
+		float: left;
+		margin-right: 1%;
+		width: 49.5%;
+		text-align:center;
+		padding: 1% 0;
+		border-radius: 5%;
+		color: white;
+	}
+
+	#login_id p{
+		width: 100%;
+		text-align:center;
+	}
+
+	#new_member{
+		float:left;
+		box-sizing:border-box;
+		border: 1pX solid #00C622;
+		width: 49.5%;
+		text-align:center;
+		padding: 0.75% 0;
+		margin-bottom:2.5%;
+		color:#00C622
+	}
+
+	#new_member p{
+		width: 100%;
+		text-align:center;
+	}
+	#my_page{
+		padding-top:5%;	
+		margin:0 5%;
+		padding-left:65%;	
+	}
+	#my_page p{
+		margin-left:1%;
+		vertical-align:middle;
+	}
+	.icon_character{
+		padding-top:1%;	
+	}
+
+	.icon_character a{
+		color:white;	
+	}
+	/*アイコン設定*/
+
+	#icon #image_icon{
+		width:9%;
+	}
+	#icon p{
+		float:left;
+	}
+
+	#bell #image_bell{
+		width:7%;	
+		height:7%;	
+	}
+	#bell p{
+		float:left;	
+	}
+
+	#check #image_check{
+		width:7%;	
+		height:7%;	
+	}
+	#check p{
+		float:left;	
+	}
+	
+	#main{
+		width:100%;
+	}

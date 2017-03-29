@@ -1,0 +1,201 @@
+﻿@charset "utf-8";
+/*------ ブラウザの持つマージンとパディングの設定をリセットする ------*/
+* {
+	padding: 0;
+	margin: 0;
+}
+@media only screen and (min-width:641px){
+	#wrapper{
+		width:100%;
+		margin:0 auto;
+	}
+	html{
+		box-sizing:border-box;
+	}
+	*,*:before,*:after{
+		box-sizing:inherit;
+	}
+	img {
+		max-width:100%;
+		width:100%;
+		height:auto;
+	}
+	body{
+		font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+		font-size:85%;
+	}
+	#contents input[type=text]{
+		height:35px;
+	}
+	nav{
+		width: 25%;
+		margin-left:5%; 
+		float: left;
+	}
+	nav ul li{
+		border:1px solid #333;
+		text-align:left;
+		padding:4%;
+		margin: 1%;
+		box-sizing: border-box; 
+		clear: right;
+		overflow: hidden;
+	}
+	nav ul li:after{
+		float: right;
+		content: ">";
+	}
+	nav ul {
+		margin-bottom: 5%;
+	}
+	nav a{
+		text-decoration: none;
+	}
+	#contents{
+		width:60%;
+		margin:0 auto;
+	}
+	#footer{
+		clear:left;
+		overflow:hidden;
+		width:100%;
+		height:100%;
+		padding:0 35.5%;
+
+
+	}
+	#footer p{
+		float:left;
+		margin:2% 1%;
+		padding:3% 3%;
+		border-radius:50%;
+		border:solid 1px black;
+		
+	}
+	#top{
+		position: fixed;
+  		bottom: 1%;
+  		right: 1%;
+  		height:150px;
+  		width:150px;
+  		padding: 5px;
+  		border-radius:50%;
+  		background-color: rgba(0,250,0,0.5);
+	}
+	#top p{
+		text-align:center;
+		padding-top:65px; 
+		color:white;
+	}
+	h2{
+		text-align: center;
+		font-size: 120%;
+		font-weight: bold;
+	}
+	#image .image{
+		float:left;
+		width:24%;
+		margin-left:0.8%; 
+	}
+	#image{
+		clear:left;
+		overflow:hidden;
+		padding:3% 0;
+	}
+	#exbit_name{
+		padding:3% 0;
+	}
+	#exbit_description{
+		padding:3% 0;
+	}
+	#description_detail{
+		padding:3% 0;
+		clear: left;
+		overflow: hidden;
+	}
+	#description_left{
+		float: left;
+		width:50%;
+	}
+	#description_right{
+		float: left;
+		width:50%;
+		margin-bottom:15%;
+	}
+	#category{
+		padding-bottom:15%;		
+	}
+	#state{
+		padding-bottom:15%;
+	}
+	/*#state_title{
+		float: left;
+		width:50%;
+		background-color: red;
+	}
+	#state_name{
+		float: left;
+		width:50%;
+	}*/
+	#price{
+		padding:3% 0;
+		clear: left;
+		overflow: hidden;
+	}
+	#price_left{
+		float: left;
+		width:50%;
+	}
+	#price_right{
+		float: left;
+		width:50%;
+	}
+	#d_bottom{
+		margin: 0 auto;
+		width:20%;
+	}
+	#bottom {
+		background: #EEE;
+		border: 3px solid #DDD;
+		color: #111;
+		width:100%;
+		padding: 10px 0;
+		text-align: center;
+		
+	}
+	footer{
+		width: 100%;
+		text-align:center;
+		padding: 1%;	
+		background-color:#3D6124;
+		color: white;
+		margin-top:2%;
+	}
+}
+@media only screen and (max-width:640px){   /*minをmaxに641pxを640に*/
+	#wrapper{
+		width:100%;/*width94%を100%に変更*/
+		margin:0 auto;
+	}
+	html{
+		box-sizing:border-box;
+	}
+	*,*:before,*:after{
+		box-sizing:inherit;
+	}
+	img {
+		max-width:100%;
+		width:100%;
+		height:auto;
+	}
+	#wrapper{
+		width:94%;
+		margin:0 auto;
+	}
+}
+
+
+
+
+
+

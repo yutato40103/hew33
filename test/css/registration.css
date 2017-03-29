@@ -1,0 +1,192 @@
+﻿@charset "utf-8";
+/*------ ブラウザの持つマージンとパディングの設定をリセットする ------*/
+* {
+	padding: 0;
+	margin: 0;
+}
+@media only screen and (min-width:641px){
+	#wrapper{
+		width:100%;
+		margin:0 auto;
+		clear:both;
+		overflow: hidden;
+	}
+	html{
+		box-sizing:border-box;
+	}
+	*,*:before,*:after{
+		box-sizing:inherit;
+	}
+	img {
+		max-width:100%;
+		width:100%;
+		height:auto;
+	}
+	body{
+		font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+		font-size:85%;
+	}
+	
+	#breadcrumb{
+		clear: both;
+		overflow: hidden;
+		margin-bottom: 2%;
+		margin-left:2%;
+	}
+	#breadcrumb p{
+		float:left;
+	}
+	h2{
+		border-top: 1px solid #CCCCCC; 
+		border-bottom: 1px solid #CCCCCC;
+		padding: 1% 0;
+		margin:2% 9.5%;
+		font-size: 150%;
+	}
+	#list{
+		overflow: hidden;
+		clear: left;
+		margin:0 32%;
+		border: 1px solid #CCCCCC;
+	}
+	#list p{
+		float: left;
+		padding:4% 6%;
+	}
+	.list:before{
+		content: ">"
+	}
+
+	#caution{
+		text-align:center;
+		padding:2% 0;
+		color:red;
+	}
+	table{
+		margin:0 10%;
+		width:80%;
+	}
+	table th{
+		border-top: solid 1px #cccccc;
+		border-right:solid 1px #cccccc;
+		padding:2%;
+		width:30%;
+		text-align:center;
+		vertical-align:middle;
+	}
+	table td{
+		border-top: solid 1px #cccccc;
+		vertical-align:middle;
+		width:70%;
+		overflow: hidden;
+		clear: left;
+		padding: 1% 0;
+	}
+	.sei{
+		float: left;
+	}
+	.mei{
+		float: left;
+	}
+	.mail{
+		padding:1% 0;	
+	}
+	#footer{
+		clear:left;
+		overflow:hidden;
+		width:100%;
+		height:100%;
+		padding:0 35.5%;
+
+	}
+	#footer p{
+		float:left;
+		margin:2% 1%;
+		padding:3% 3%;
+		border-radius:50%;
+		border:solid 1px black;
+		
+	}
+	#num ul{
+		clear: both;
+		overflow: hidden;
+		padding:0 35%;
+	}
+	#num li{
+		float: left;
+		border:solid 1px black;
+		padding:3%;
+		margin: 1%;
+	}
+	#top{
+		position: fixed;
+  		bottom: 1%;
+  		right: 1%;
+  		height:150px;
+  		width:150px;
+  		padding: 5px;
+  		border-radius:50%;
+  		background-color: rgba(0,250,0,0.5);
+	}
+	#button{
+		overflow:hidden;
+		clear:left;	
+		margin:2% 25%;
+	}
+	input[type="reset"]{
+	   background-color:#988B67;
+       color: white;
+       border: 1px solid #988B67;
+	   float:left;
+	   padding:2.5% 15%;
+	}
+	input[type="submit"] {
+	   background-color:#988B67;
+	   color: white;
+	   border: 1px solid #988B67;
+	   float:left;
+	   padding:2.5% 17%;
+	   margin-left:13%;
+	}
+	#top p{
+		text-align:center;
+		padding-top:65px; 
+		color:white;
+	}
+	footer{
+		width: 100%;
+		text-align:center;
+		padding: 1%;
+		background-color:#3D6124;
+		color: white;
+	}
+	
+
+}
+@media only screen and (max-width:640px){   /*minをmaxに641pxを640に*/
+	#wrapper{
+		width:100%;/*width94%を100%に変更*/
+		margin:0 auto;
+	}
+	html{
+		box-sizing:border-box;
+	}
+	*,*:before,*:after{
+		box-sizing:inherit;
+	}
+	img {
+		max-width:100%;
+		width:100%;
+		height:auto;
+	}
+	#wrapper{
+		width:94%;
+		margin:0 auto;
+	}
+}
+
+
+
+
+
+

@@ -1,0 +1,498 @@
+﻿@charset "utf-8";
+/*------ ブラウザの持つマージンとパディングの設定をリセットする ------*/
+* {
+	padding: 0;
+	margin: 0;
+}
+@media only screen and (min-width:641px){
+	#wrapper{
+		width:100%;
+		
+		margin:0 auto;
+	}
+	html{
+		box-sizing:border-box;
+	}
+	*,*:before,*:after{
+		box-sizing:inherit;
+	}
+	img {
+		max-width:100%;
+		width:100%;
+		height:auto;
+	}
+	body{
+		font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+		font-size:85%;
+	}
+	
+	#contents{
+		clear:left;
+		overflow:hidden;	
+	}
+	#main img{
+		width: 100%;
+		height: 420px;
+	}
+	/**#contents_left{
+		float:left;	
+		background-color:orange;
+		width:75%;
+		height:75%;
+	}
+	#contents_right{
+		float:left;	
+		width:25%;
+		height:25%;
+	}**/
+	#popularity_food h2{
+		text-align:center;
+		font-size:200%;
+		margin: 1% 0;
+		color:green;
+	}
+	#popularity3 .tab_area ul{
+		margin: 0 20%;
+
+	}
+	#popularity3 .tab_area ul li{
+		display:block;
+		float:left;
+		width: 33.3%;
+		border-right:1px solid #ffffff;
+		-webkit-box-sizing : border-box ;
+		-moz-box-sizing : border-box ;
+		box-sizing : border-box ;
+		text-align:center;
+		font-size:22px;
+		padding: 1%;
+		color:#313131;
+		border: 1px solid #DDDDDD;
+	}
+	 
+	#popularity3 .tab_area ul li:hover {
+		background:#999999;
+		color:#ffffff;
+		cursor:pointer;
+	}
+	 
+	/*コンテンツ部分の表示領域を固定してはみ出さないようにする*/
+	#popularity3 .content_area {
+		overflow: hidden;
+		font-size: 20px;
+		position: relative;
+
+	}
+	 
+	#popularity3 .content_area .content_block {
+		padding: 10px;
+		width: 800px;
+		-webkit-box-sizing : border-box ;
+		-moz-box-sizing : border-box ;
+		box-sizing : border-box ;
+
+	}
+	 
+	.content_block_3 {
+		background: #ffffff;
+		padding: 10px;
+		clear:both;
+		overflow:hidden;
+	}
+
+	#contents3_1 {
+    	background:#90fe85;
+	}
+ 
+	#contents3_2 {
+    	background-color:#fed685;
+	}
+ 
+	#contents3_3 {
+    	background:#fce2c4;
+	}
+	 
+
+	.food_contents{
+		padding: 1% 12.5%;
+		clear:both;
+		overflow:hidden;
+	}
+
+	.food{
+		float:left;
+		width:15%;
+		height:15%;
+		margin:0 2%;
+	}
+	.food_image img{
+		border-radius: 100%;
+		width:150px;
+		height:150px;
+	}
+	.food p{
+		text-align: center;
+	}
+	.food_right{
+		float:right;
+		padding-right:15%;
+	}
+	.right{
+		float:right;
+		padding-right:5%;
+	}		
+	#popularity_farmer{
+		clear:left;
+		overflow:hidden;
+	}
+	#popularity_farmer h2{
+		text-align:center; 
+		font-size:150%;
+		margin: 2% 0;
+	}
+	#farmer_work{
+		margin: 0 10%;	
+	}
+	.farmer{
+		float:left;
+		padding: 0 1%;
+		width:32%;
+		height:32%;
+	}
+	#four_seasons{
+		clear:left;
+		overflow:hidden;
+		padding:0 8%;
+		background-color:#e7fcfd;
+		padding-bottom:3%; 
+	}
+
+	#four_seasons h2{
+		text-align:center;
+		font-size: 200%; 
+		margin: 2% 0;
+		color:#001246;
+	}
+	.summer{
+		float:left;
+		width:175px;
+		height:175px;
+		padding:0 1%;
+	}
+	.summer img{
+		width:140px;
+		height:140px;
+	}
+	#latest_information{
+		clear:left;
+		overflow:hidden;
+		padding:1% 10%;
+	}
+	#latest_information h2{
+		font-size: 150%; 
+		margin: 1% 0;
+	}
+	.new{
+		float:left;	
+		width:25%;
+	}
+	.new_image img{
+		width:100px;
+		height:100px;
+	}
+	.new_character{
+		width:75%;
+		height:75%;
+	}
+	#footer{
+		clear:left;
+		overflow:hidden;
+		width:100%;
+		height:100%;
+		padding:0 35.5%;
+
+	}
+	#footer p{
+		float:left;
+		margin:2% 1%;
+		padding:3% 3%;
+		border-radius:50%;
+		border:solid 1px black;
+		
+	}
+	#top{
+		position: fixed;
+  		bottom: 1%;
+  		right: 1%;
+  		height:150px;
+  		width:150px;
+  		padding: 5px;
+  		border-radius:50%;
+  		background-color: rgba(0,250,0,0.7);
+  		 z-index: 99;
+	}
+	#top p{
+		text-align:center;
+		padding-top:40px; 
+		color:white;
+	}
+	#top a{
+		text-decoration: none;
+	}
+	footer{
+		width: 100%;
+		text-align:center;
+		padding: 1%;	
+		background-color:#3D6124;
+		color: white;
+	}
+}
+@media only screen and (max-width:640px){   /*minをmaxに641pxを640に*/
+		#wrapper{
+		width:100%;
+		
+		margin:0 auto;
+	}
+	html{
+		box-sizing:border-box;
+	}
+	*,*:before,*:after{
+		box-sizing:inherit;
+	}
+	img {
+		max-width:100%;
+		width:100%;
+		height:auto;
+	}
+	body{
+		font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+		font-size:85%;
+	}
+	
+	#contents{
+		clear:left;
+		overflow:hidden;	
+	}
+	#main img{
+		width: 100%;
+		height: 430px;
+	}
+	/**#contents_left{
+		float:left;	
+		background-color:orange;
+		width:75%;
+		height:75%;
+	}
+	#contents_right{
+		float:left;	
+		width:25%;
+		height:25%;
+	}**/
+	#popularity_food h2{
+		text-align:center;
+		font-size:200%;
+		margin: 1% 0;
+		color:green;
+	}
+	#popularity3 .tab_area ul{
+		margin: 0 20%;
+
+	}
+	#popularity3 .tab_area ul li{
+		display:block;
+		float:left;
+		width: 33.3%;
+		border-right:1px solid #ffffff;
+		-webkit-box-sizing : border-box ;
+		-moz-box-sizing : border-box ;
+		box-sizing : border-box ;
+		text-align:center;
+		font-size:22px;
+		padding: 1%;
+		color:#313131;
+		border: 1px solid #DDDDDD;
+	}
+	 
+	#popularity3 .tab_area ul li:hover {
+		background:#999999;
+		color:#ffffff;
+		cursor:pointer;
+	}
+	 
+	/*コンテンツ部分の表示領域を固定してはみ出さないようにする*/
+	#popularity3 .content_area {
+		overflow: hidden;
+		font-size: 20px;
+		position: relative;
+
+	}
+	 
+	#popularity3 .content_area .content_block {
+		padding: 10px;
+		width: 800px;
+		-webkit-box-sizing : border-box ;
+		-moz-box-sizing : border-box ;
+		box-sizing : border-box ;
+
+	}
+	 
+	.content_block_3 {
+		background: #ffffff;
+		padding: 10px;
+		clear:both;
+		overflow:hidden;
+	}
+
+	#contents3_1 {
+    	background:#90fe85;
+	}
+ 
+	#contents3_2 {
+    	background-color:#fed685;
+	}
+ 
+	#contents3_3 {
+    	background:#fce2c4;
+	}
+	 
+
+	.food_contents{
+		padding: 1% 12.5%;
+		clear:both;
+		overflow:hidden;
+	}
+
+	.food{
+		float:left;
+		width:15%;
+		height:15%;
+		margin:0 2%;
+	}
+	.food_image img{
+		border-radius: 100%;
+		width:150px;
+		height:150px;
+	}
+	.food p{
+		text-align: center;
+	}
+	.food_right{
+		float:right;
+		padding-right:15%;
+	}
+	.right{
+		float:right;
+		padding-right:5%;
+	}		
+	#popularity_farmer{
+		clear:left;
+		overflow:hidden;
+	}
+	#popularity_farmer h2{
+		text-align:center; 
+		font-size:150%;
+		margin: 2% 0;
+	}
+	#farmer_work{
+		margin: 0 10%;	
+	}
+	.farmer{
+		float:left;
+		padding: 0 1%;
+		width:32%;
+		height:32%;
+	}
+	#four_seasons{
+		clear:left;
+		overflow:hidden;
+		padding:0 8%;
+		background-color:#e7fcfd;
+		padding-bottom:3%; 
+	}
+
+	#four_seasons h2{
+		text-align:center;
+		font-size: 200%; 
+		margin: 2% 0;
+		color:#001246;
+	}
+	.summer{
+		float:left;
+		width:175px;
+		height:175px;
+		padding:0 1%;
+	}
+	.summer img{
+		width:140px;
+		height:140px;
+	}
+	#latest_information{
+		clear:left;
+		overflow:hidden;
+		padding:1% 10%;
+	}
+	#latest_information h2{
+		font-size: 150%; 
+		margin: 1% 0;
+	}
+	.new{
+		float:left;	
+		width:25%;
+	}
+	.new_image img{
+		width:100px;
+		height:100px;
+	}
+	.new_character{
+		width:75%;
+		height:75%;
+	}
+	#footer{
+		clear:left;
+		overflow:hidden;
+		width:100%;
+		height:100%;
+		padding:0 35.5%;
+
+	}
+	#footer p{
+		float:left;
+		margin:2% 1%;
+		padding:3% 3%;
+		border-radius:50%;
+		border:solid 1px black;
+		
+	}
+	#top{
+		position: fixed;
+  		bottom: 1%;
+  		right: 1%;
+  		height:150px;
+  		width:150px;
+  		padding: 5px;
+  		border-radius:50%;
+  		background-color: rgba(0,250,0,0.7);
+  		 z-index: 99;
+	}
+	#top p{
+		text-align:center;
+		padding-top:40px; 
+		color:white;
+	}
+	#top a{
+		text-decoration: none;
+	}
+	footer{
+		width: 100%;
+		text-align:center;
+		padding: 1%;	
+		background-color:#3D6124;
+		color: white;
+	}
+}
+
+
+
+
+
+

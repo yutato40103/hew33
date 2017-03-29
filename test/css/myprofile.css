@@ -1,0 +1,144 @@
+﻿@charset "utf-8";
+/*------ ブラウザの持つマージンとパディングの設定をリセットする ------*/
+* {
+	padding: 0;
+	margin: 0;
+}
+body{
+		font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+		font-size:85%;
+	}
+@media only screen and (min-width:641px){
+
+	#account{
+		clear: left;
+		overflow: hidden;
+		width:90%;
+		height:10%;
+		margin:0 auto;
+	}
+	#account_left{
+		float: left;
+		margin-top:15px; 
+	}
+	h2 {
+		text-align:center;
+		font-size: 120%;
+		margin-top:1%;
+		padding:2%; 
+		font-weight: bold;
+	}
+	#account_left {
+		width:20%;
+		height:20%;
+	}
+	.company{
+		float: left;
+		padding: 1%;
+		width: 80%;
+	}
+	table.company {
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0px 5px;
+    font-size: 12px;
+}
+/*table.company th,
+table.company tr{
+	border: solid 3px white; 
+}
+*/
+table.company th,
+table.company td {
+    padding: 10px;
+}
+ 
+table.company th {
+    background: green;
+    vertical-align: middle;
+    text-align: left;
+    /*width: 120px;*/
+    overflow: visible;
+    position: relative;
+    color: #fff;
+    font-weight: normal;
+    font-size: 15px;
+    width: 15px;
+}
+ 
+table.company th:after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: green;
+    border-width: 10px;
+    margin-top: -10px;
+}
+/* firefox */
+@-moz-document url-prefix() {
+    table.company th::after {
+        float: right;
+        padding: 0;
+        left: 30px;
+        top: 10px;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: relative;
+        pointer-events: none;
+        border: 10px solid transparent;
+        border-left: green 10px solid;
+        margin-top: -10px;
+    }
+}
+ 
+table.company td {
+    background:#cdffdb;/*色替え*/
+    width: 85%;
+    padding-left: 20px;
+}
+	#contents{
+		width:90%;
+		margin:0 auto;
+	}
+#map{
+	clear: left;
+	overflow: hidden;
+	width: 100%;
+	margin-bottom:2%; 
+}
+#gmap{
+	width:530px;
+	height:400px;
+	float:left;
+}
+#gmap2{
+	margin-left:60px;
+	width:530px;
+	height:400px;
+	float:left;
+}
+
+	footer{
+		width: 100%;
+		text-align:center;
+		padding: 1%;	
+		background-color:#3D6124;
+		color: white;
+		clear: left;
+		overflow: hidden;
+	}
+}
+
+
+
+
+
+
+

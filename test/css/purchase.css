@@ -1,0 +1,80 @@
+﻿@charset "utf-8";
+/*------ ブラウザの持つマージンとパディングの設定をリセットする ------*/
+* {
+	padding: 0;
+	margin: 0;
+}
+@media only screen and (min-width:641px){
+	#wrapper{
+		width:100%;
+		margin:0 auto;
+
+	}
+	html{
+		box-sizing:border-box;
+	}
+	*,*:before,*:after{
+		box-sizing:inherit;
+	}
+	
+	body{
+		font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+		font-size:85%;
+
+	}
+	#contents{
+		width: 40%;
+		margin: 0 auto;
+		height: 400px;
+	}
+
+	#contents_top{
+		clear: left;
+		overflow: hidden;
+		border: 1px #DCDCDC solid;
+		margin-bottom:7%;
+		margin-top:7%;
+	}
+	#top_left{
+		float: left;
+		width: 10%;
+		margin-top: 1%;
+		margin-left: 1%;
+	}
+	#top_right{
+		float: left;
+		padding-left:5%; 
+		padding-top:2%; 
+		width: 88%;
+	}
+	#method{
+		clear: left;
+		overflow: hidden;
+	}
+	#method p{
+		float: left;
+	}
+	#purchase{
+		margin: 5% 25%;
+		width: 50%;
+		background-color:#988B67; 
+		padding:2% 9%; 
+		color: white;
+	}
+	#purchase p{
+		text-align:center; 
+	}
+	#contents_middle p{
+		margin-top: 1%;
+	}
+
+	footer{
+		width: 100%;
+		text-align:center;
+		padding: 1%;	
+		background-color:#3D6124;
+		color: white;
+		clear: left;
+		overflow: hidden;
+	}
+}
